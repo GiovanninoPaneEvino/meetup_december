@@ -1,0 +1,6 @@
+dependencies:
+  - name: mybar
+    version: 0.01
+    src: htmlwidgets/lib
+    script: d3.v4.min.js
+    stylesheet: mybar.css
