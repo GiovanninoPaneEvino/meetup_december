@@ -57,6 +57,7 @@ var data = [{"letter":"A","frequency":0.08167},{"letter":"B","frequency":0.01492
       .attr("x", function(d) { return x(d.letter); })
       .attr("y", function(d) { return y(d.frequency); })
       .attr("width", x.bandwidth())
-      .attr("height", function(d) { return height - y(d.frequency); });
+      .attr("height", function(d) { return height - y(d.frequency); })
+	  .on("click",function(){d3.select(this).style("fill","red");});
 
 </script>
